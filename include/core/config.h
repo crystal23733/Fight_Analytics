@@ -194,28 +194,7 @@ private:
       * - 1 = 얇음
       * - 3 = 굵음
       */
-     int hitTextThickness_;
-
-    // ===== 유틸리티 함수들 =====
-    
-    /**
-     * @brief 설정값들이 유효한지 검사
-     * @return true = 모든 설정이 올바름, false = 문제 있음
-     * 
-     * 🔍 예시: blurKernel이 홀수인지, thresholdVal이 0-255 범위인지 확인
-     */
-    bool isValid() const;
-    
-    /**
-     * @brief 모든 설정을 기본값으로 리셋
-     */
-    void resetToDefaults();
-    
-    /**
-     * @brief 설정 내용을 문자열로 출력 (디버깅용)
-     * @return 설정값들을 보기 좋게 정리한 문자열
-     */
-    std::string toString() const;
+          int hitTextThickness_;
 };
 
 } // namespace FightAnalytics
